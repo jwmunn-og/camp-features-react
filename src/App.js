@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FEATURES from './camp_features.js';
+import FeatureList from './feature_list.js';
 import './App.css';
 
 class App extends Component {
@@ -8,9 +9,7 @@ class App extends Component {
     console.log(camp_features);
 
     return (
-      <div className="App">
-        Hello World.
-      </div>
+      <FeatureList features={camp_features} />
     );
   }
 }
