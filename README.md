@@ -1,4 +1,4 @@
-## installation
+## Installation
 - Clone the repository
 - Run `npm install` to install dependencies
 - To run development build: `npm start`
