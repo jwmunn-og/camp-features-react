@@ -6,7 +6,6 @@ import './App.css';
 class App extends Component {
   render() {
     const camp_features = FEATURES;
-    console.log(camp_features);
 
     return (
       <FeatureList features={camp_features} />
