@@ -8,7 +8,7 @@ class FeaturesList extends Component {
     return(
       <div className="features">
         <h2>Campground Features</h2>
-        <ul>
+        <ul className="featureList">
           {features.map((feature, index) => (
             <Feature feature={feature} index={index} key={index} />
           ))}
