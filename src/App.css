@@ -59,8 +59,7 @@ button {
   width: 25%; }
 
 .unavailable {
-  color: #ccc;
-  text-decoration: line-through; }
+  color: #ccc; }
 
 .present {
   color: #000; }
