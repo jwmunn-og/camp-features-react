@@ -1,3 +1,6 @@
+## Demo
+You can view a quick preview of this application on [Heroku](https://justinmunn-hipcamp-test.herokuapp.com/)
+
 ## Installation
 - Clone the repository
 - Run `npm install` to install dependencies
@@ -5,6 +8,7 @@
 - To run production build: `npm run build`
 
 - To use Sass during development run `npm run watch-css`
+
 
 ## Features 
 
