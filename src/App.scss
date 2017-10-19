@@ -16,6 +16,18 @@
   background-size: cover;
 }
 
+// Typography
+h2 {
+  margin: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+// FeaturesList
+
 .features {
   background: #fff;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -23,6 +35,7 @@
   padding: .5rem;
   width: 500px;
   margin: 2%;
+  border-radius: .25rem;
 }
 
 ul, li {
@@ -41,8 +54,17 @@ li {
   }
 }
 
+// SubFeaturesList
+
 .subFeatures li {
   padding-left: 2rem;
+}
+
+.subFeatures li {
+  font-size: 1.188rem; // 19px
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-weight: 400;
 }
 
 button {
@@ -55,13 +77,6 @@ button {
   height: 3rem;
   font-size: 1.5rem;
   font-weight: 300;
-}
-
-.subFeatures li {
-  font-size: 1.188rem; // 19px
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-  font-weight: 400;
 }
 
 .left, .right {
@@ -86,8 +101,14 @@ button {
   color: #000;
 }
 
+// Icons
+
 .lnr {
   padding-right: 1rem;
+}
+
+.lnr-chevron-down, .lnr-chevron-up {
+  padding-right: 0;
 }
 
 .lnr-checkmark-circle {
@@ -102,15 +123,6 @@ button {
   margin-right: 1rem;
 }
 
-h2 {
-  margin: 0;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
-  font-size: 2.5rem;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-}
-
 .lnr {
   display: inline-block;
   fill: currentColor;
@@ -119,6 +131,8 @@ h2 {
   vertical-align: -0.05em;
 }
 
+
+// Small Device Styles
 @media screen and (max-width: 30em) {
   * {
     font-size: 90%;

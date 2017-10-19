@@ -20,7 +20,8 @@
   align-self: center;
   padding: .5rem;
   width: 500px;
-  margin: 2%; }
+  margin: 2%;
+  border-radius: .25rem; }
 
 ul, li {
   list-style: none;
@@ -37,6 +38,12 @@ li {
 .subFeatures li {
   padding-left: 2rem; }
 
+.subFeatures li {
+  font-size: 1.188rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-weight: 400; }
+
 button {
   background-color: inherit;
   display: block;
@@ -47,12 +54,6 @@ button {
   height: 3rem;
   font-size: 1.5rem;
   font-weight: 300; }
-
-.subFeatures li {
-  font-size: 1.188rem;
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-  font-weight: 400; }
 
 .left, .right {
   display: inline-block; }
@@ -73,6 +74,9 @@ button {
 
 .lnr {
   padding-right: 1rem; }
+
+.lnr-chevron-down, .lnr-chevron-up {
+  padding-right: 0; }
 
 .lnr-checkmark-circle {
   color: #2ecc71; }
