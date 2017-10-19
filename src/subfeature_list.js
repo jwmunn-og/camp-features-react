@@ -5,7 +5,12 @@ const SubFeatures = ({ subfeatures, displayContent, onDisplayChange, index }) =>
     <ul className="subFeatures">
       {subfeatures.map((subfeature, index) => (
         <li key={index}>
-          {subfeature.presence ? '✓' : '✕'} {subfeature.title}
+          <span className={subfeature.presence ? 'icon green' : 'icon red'}>{subfeature.presence ? '✓' : '✕'}</span>
+          <div className='left'>
+            <span className={subfeature.presence ? 'present' : 'unavailable'}>
+              {subfeature.title}
+            </span>
+          </div>
         </li>
       ))}
     </ul>

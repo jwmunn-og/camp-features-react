@@ -15,10 +15,16 @@ class Feature extends Component {
 
     return (
       <li key={index}>
-        <button onClick={this.handleDisplayChange}>
-          {feature.presence ? '✓' : '✕'} {feature.title} &nbsp;
-          Display SubFeatures
+        <button className={feature.presence ? 'present' : 'unavailable'} onClick={this.handleDisplayChange}>
+          <div className="left">
+            <span className={feature.presence ? 'icon green' : 'icon red'}>{feature.presence ? '✓' : '✕'}</span>
+            <span className={feature.presence ? 'present' : 'unavailable'}>{feature.title}</span>
+          </div>
+          <div className="right">
+            <span>{feature.subfeatures.length > 0 ? '▼' : ''}</span>
+          </div>
         </button>
+        
         {displayContent && <SubFeatures subfeatures={feature.subfeatures} />}
     </li>
     );
