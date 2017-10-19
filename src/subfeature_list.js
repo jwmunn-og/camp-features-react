@@ -5,7 +5,7 @@ const SubFeatures = ({ subfeatures, displayContent, onDisplayChange, index }) =>
     <ul className="subFeatures">
       {subfeatures.map((subfeature, index) => (
         <li key={index}>
-          {subfeature.title} {subfeature.presence ? '✓' : '✕'}
+          {subfeature.presence ? '✓' : '✕'} {subfeature.title}
         </li>
       ))}
     </ul>

@@ -2,21 +2,14 @@ import React, { Component } from 'react';
 import Feature from './feature.js';
 
 class FeaturesList extends Component {
-  
-
-  toggleDisplay = (feature) => {
-    feature.setState({
-      displayContent: !feature.state.displayContent
-    });
-  }
-
   render() {
-    
+    const features = this.props.features;
+
     return(
-      <div>
+      <div className="features">
         <h2>Features</h2>
         <ul>
-          {this.props.features.map((feature, index) => (
+          {features.map((feature, index) => (
             <Feature feature={feature} index={index} key={index} />
           ))}
         </ul>
