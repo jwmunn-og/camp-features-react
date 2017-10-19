@@ -1,20 +1,28 @@
-import React from 'react';
-import SubFeatures from './subfeature_list.js';
+import React, { Component } from 'react';
+import Feature from './feature.js';
 
-function FeaturesList({features}) {
-  return(
-    <div>
-      <h2>Features</h2>
-      <ul>
-        {features.map((feature, index) => (
-          <li key={index}>
-            {feature.title} {feature.presence ? '✓' : '✕'}
-            <SubFeatures subfeatures={feature.subfeatures} />
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+class FeaturesList extends Component {
+  
+
+  toggleDisplay = (feature) => {
+    feature.setState({
+      displayContent: !feature.state.displayContent
+    });
+  }
+
+  render() {
+    
+    return(
+      <div>
+        <h2>Features</h2>
+        <ul>
+          {this.props.features.map((feature, index) => (
+            <Feature feature={feature} index={index} key={index} />
+          ))}
+        </ul>
+      </div>
+    );
+  }
 }
 
 export default FeaturesList;
