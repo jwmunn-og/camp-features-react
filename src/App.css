@@ -1,3 +1,7 @@
+* {
+  font-weight: 300;
+  font-family: 'Assistant', sans-serif; }
+
 #root {
   background: #ddd;
   display: flex;
@@ -14,11 +18,12 @@
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   align-self: center;
   padding: .5rem;
-  width: 500px; }
+  width: 500px;
+  margin: 2%; }
 
 ul, li {
   list-style: none;
-  margin: 2px 0; }
+  margin: 0; }
 
 ul {
   padding: 0; }
@@ -45,7 +50,8 @@ button {
 .subFeatures li {
   font-size: 1.188rem;
   padding-top: .25rem;
-  padding-bottom: .25rem; }
+  padding-bottom: .25rem;
+  font-weight: 400; }
 
 .left, .right {
   display: inline-block; }
@@ -64,10 +70,13 @@ button {
 .present {
   color: #000; }
 
-.green {
+.lnr {
+  padding-right: 1rem; }
+
+.lnr-checkmark-circle {
   color: #2ecc71; }
 
-.red {
+.lnr-cross {
   color: #e74c3c; }
 
 .icon {
@@ -77,4 +86,13 @@ h2 {
   margin: 0;
   padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  text-align: center; }
+
+.lnr {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em; }

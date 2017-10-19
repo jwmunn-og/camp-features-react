@@ -1,15 +1,13 @@
 import React from 'react';
 
 function Icon({ feature }) {
-  let icon = '✓';
-  let color = 'green'
+  let icon = 'lnr-checkmark-circle';
   if(!feature.presence) {
-    icon = '✕';
-    color = 'red'
+    icon = 'lnr-cross';
   }
 
   return (
-    <span className={`icon ${color}`}>{icon}</span>
+    <span className={`lnr ${icon}`}></span>
   );
 }
 

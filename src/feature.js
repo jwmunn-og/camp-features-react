@@ -1,25 +1,7 @@
 import React, { Component } from 'react';
 import SubFeatures from './subfeature_list.js';
 import Icon from './icon.js';
-
-function Chevron({ feature, statecheck }) {
-  const displayContent = statecheck;
-  const hasSubFeatures = feature.subfeatures.length > 0;
-  let icon = '';
-
-  if (hasSubFeatures && displayContent) {
-    icon = '▲'
-  }
-  if (hasSubFeatures && !displayContent) {
-    icon = '▼'
-  }
-
-  return (
-    <div className="right">
-      <span>{icon}</span>
-    </div>
-  );
-}
+import Chevron from './chevron.js';
 
 class Feature extends Component {
   state = { displayContent: false };
@@ -40,7 +22,7 @@ class Feature extends Component {
             <Icon feature={feature} />
             <span className={feature.presence ? 'present' : 'unavailable'}>{feature.title}</span>
           </div>
-          <Chevron feature={feature} statecheck={displayContent} />
+          <Chevron feature={feature} displayContent={displayContent} />
         </button>
         
         {displayContent && <SubFeatures subfeatures={feature.subfeatures} />}
